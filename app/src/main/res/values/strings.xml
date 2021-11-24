@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AUBSchedule</string>
+    <string name="search_hint">Search here</string>
+    <string name="update_files_button">Update files</string>
+    <string name="load_courses_button">Load courses</string>
+    <string-array name="spinner_options">
+        <item>By room</item>
+        <item>By instructor</item>
+    </string-array>
+</resources>
