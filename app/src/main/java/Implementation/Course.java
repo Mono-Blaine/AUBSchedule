@@ -34,7 +34,8 @@ public class Course {
 	}	
 	public Course(String[] arr) {
 		try {
-			this.semester = arr[0];
+			this.semester = arr[0].split(" ")[0];
+			System.out.println("XXXXXXXXXXXXXXXX:  "+semester);
 			this.crn = arr[1];
 			this.subject = arr[2];
 			this.num = arr[3];

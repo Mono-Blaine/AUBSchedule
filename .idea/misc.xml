@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidProjects/AUBSchedule/app/src/main/res/drawable/list_divider.xml" value="0.19583333333333333" />
-        <entry key="..\:/AndroidProjects/AUBSchedule/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/AndroidProjects/AUBSchedule/app/src/main/res/drawable/rounded_corner_button.xml" value="0.19583333333333333" />
+        <entry key="..\:/AndroidProjects/AUBSchedule/app/src/main/res/drawable/spinner_arrow.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/AUBSchedule/app/src/main/res/drawable/spinner_background.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/AUBSchedule/app/src/main/res/layout/activity_main.xml" value="0.22" />
       </map>
     </option>
   </component>

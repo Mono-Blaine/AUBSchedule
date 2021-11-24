@@ -1,14 +1,9 @@
 package Sam.Ab.Application;
 
-import android.app.DownloadManager;
 import android.content.Context;
-import android.net.Uri;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import Implementation.CsvToDb;
 import Implementation.Downloader;
 import Implementation.HtmlToCsv;
 
@@ -44,12 +39,17 @@ public class UpdateFiles {
 
     Downloader downloader;
     HtmlToCsv toCsv;
+    Context context;
 
-    public void buttonUpdateFiles(View view, Context context) {
+    public UpdateFiles(Context context) {
+        this.context = context;
+    }
+
+    public void buttonUpdateFiles(View view) {
         downloader = new Downloader(context);
         toCsv = new HtmlToCsv(context);
 
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < 26; i++) {
             String htmlFile = (char) (i + 65) + ".txt";
             String csvFile = (char) (i + 65) + "csv.txt";
 

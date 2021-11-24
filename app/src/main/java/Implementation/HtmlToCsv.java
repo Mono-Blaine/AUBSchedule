@@ -22,8 +22,8 @@ public class HtmlToCsv {
 	 */
 	public void htmlToCsv(String htmlFile, String csvFile) {
 		try {
-			FileOutputStream fileout= context.openFileOutput(csvFile, Context.MODE_PRIVATE);
-			OutputStreamWriter writer = new OutputStreamWriter(fileout);
+			FileOutputStream fileOut = context.openFileOutput(csvFile, Context.MODE_PRIVATE);
+			OutputStreamWriter writer = new OutputStreamWriter(fileOut);
 
 			FileInputStream inStream = context.openFileInput(htmlFile);
 			String html = "";

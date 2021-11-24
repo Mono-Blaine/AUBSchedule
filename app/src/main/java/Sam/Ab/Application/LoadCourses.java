@@ -7,16 +7,21 @@ import android.widget.Toast;
 import Implementation.CsvToDb;
 
 public class LoadCourses {
+    Context context;
     CsvToDb toDb;
 
-    public void buttonLoadCourses(View view, Context context) {
+    public LoadCourses(Context context) {
+        this.context = context;
+    }
+
+    public void buttonLoadCourses(View view) {
         toDb = new CsvToDb(context);
 
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < 26; i++) {
             String csvFile = (char) (i + 65) + "csv.txt";
             toDb.csvToDb(MainActivity.courses, csvFile);
         }
 
-        Toast.makeText(context, "Courses updated", Toast.LENGTH_LONG).show();
+        Toast.makeText(context, MainActivity.courses.size() + " courses loaded", Toast.LENGTH_LONG).show();
     }
 }

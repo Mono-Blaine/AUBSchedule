@@ -5,10 +5,6 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import Sam.Ab.Application.MainActivity;
 
 public class CsvToDb {
 	private final Context context;
