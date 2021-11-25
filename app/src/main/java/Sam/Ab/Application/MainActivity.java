@@ -19,6 +19,10 @@ import Implementation.Schedule;
 public class MainActivity extends AppCompatActivity {
     public static boolean byRoom = true;
     public static boolean byInstructor = false;
+    public static boolean byCourse = false;
+    public static boolean byThereLast = false;
+    public static boolean byThereNow = false;
+    public static boolean byInstructorNow = false;
     public static String semester = "Fall";
     public static ArrayList<Course> courses = new ArrayList<>();
     Spinner  spinnerSearch;

@@ -4,10 +4,16 @@
     <string name="update_files_button">Update files</string>
     <string name="load_courses_button">Load courses</string>
     <string name="search_button">Search</string>
+	
     <string-array name="spinner_search_options">
         <item>By room</item>
         <item>By instructor</item>
+        <item>By course</item>
+        <item>Who was there last</item>
+        <item>Who is there now</item>
+        <item>Where is instructor now</item>
     </string-array>
+	
     <string-array name="spinner_semester_options">
         <item>Fall</item>
         <item>Spring</item>

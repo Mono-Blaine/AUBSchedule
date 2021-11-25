@@ -42,12 +42,34 @@ public class CourseSearch {
         }
         CourSeera seer = new CourSeeraFactory().createInstance(MainActivity.courses, MainActivity.semester);
 
-        if (MainActivity.byRoom)
-            return seer.roomSchedule(new Room(command[0], command[1]));
+        if (MainActivity.byRoom) {
+            if (command.length == 2)
+                return seer.roomSchedule(new Room(command[0], command[1]));
+        }
 
         else if (MainActivity.byInstructor) {
             String lastName = parseLastName(command);
             return seer.profSchedule(new Instructor(command[0], lastName));
+        }
+
+        if (MainActivity.byCourse) {
+            if (command.length == 2)
+                return seer.courseSchedule(command[0] + command[1]);
+        }
+
+        else if (MainActivity.byThereLast) {
+            if (command.length == 2)
+                return seer.whoWasThereLast(new Room(command[0], command[1]));
+        }
+
+        else if (MainActivity.byThereNow) {
+            if (command.length == 2)
+                return seer.whoIsThereNow(new Room(command[0], command[1]));
+        }
+
+        else if (MainActivity.byInstructorNow) {
+            String lastName = parseLastName(command);
+            return seer.whereIsProf(new Instructor(command[0], lastName));
         }
 
         Toast.makeText(context, "Invalid input", Toast.LENGTH_LONG).show();

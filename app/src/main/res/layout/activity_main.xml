@@ -9,14 +9,14 @@
 
     <Spinner
         android:id="@+id/spinnerSearchOptions"
-        android:layout_width="110dp"
+        android:layout_width="140dp"
         android:layout_height="40dp"
         android:layout_marginStart="57dp"
         android:background="@color/spinner_background_color"
         android:entries="@array/spinner_search_options"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintHorizontal_bias="0.873"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.076"
@@ -24,22 +24,22 @@
 
     <Spinner
         android:id="@+id/spinnerSemesterOptions"
-        android:layout_width="110dp"
+        android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginTop="36dp"
         android:background="@color/spinner_background_color"
         android:entries="@array/spinner_semester_options"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintHorizontal_bias="0.856"
         app:layout_constraintStart_toEndOf="@+id/searchButton"
         app:layout_constraintTop_toBottomOf="@+id/spinnerSearchOptions"
-        app:layout_constraintVertical_bias="0.017"
+        app:layout_constraintVertical_bias="0.01"
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="200dp"
+        android:layout_width="180dp"
         android:layout_height="48dp"
         android:autofillHints="name"
         android:ems="10"
@@ -47,13 +47,13 @@
         android:inputType="textPersonName"
         android:textColor="@color/view_text_color"
         android:textColorHint="@color/view_text_color"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/spinnerSearchOptions"
-        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.066" />
+        app:layout_constraintVertical_bias="0.077" />
 
     <TextView
         android:id="@+id/textView"
@@ -107,9 +107,9 @@
         android:textColor="@color/view_text_color"
         app:layout_constraintBottom_toTopOf="@+id/updateFilesButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.094"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.085" />
+        app:layout_constraintVertical_bias="0.067" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

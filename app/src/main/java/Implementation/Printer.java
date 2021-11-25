@@ -2,6 +2,8 @@ package Implementation;
 
 import java.util.List;
 
+import Sam.Ab.Application.MainActivity;
+
 public class Printer {
 
 	/**
@@ -12,10 +14,26 @@ public class Printer {
 	public String printSchedule(List<Schedule> schedule) {
 		StringBuilder outputBuilder = new StringBuilder();
 
-		for (Schedule sched : schedule)
-			outputBuilder.append(sched.getRoom()).append(", ").append(sched.getCourse()).append(", ")
-					.append(sched.getInstructor()).append(", ").append(sched.getFromTime()).append(" -> ")
-					.append(sched.getToTime()).append(", ").append(sched.getDays()).append("\n");
+		if (MainActivity.byRoom || MainActivity.byThereLast || MainActivity.byThereNow) {
+			for (Schedule sched : schedule)
+				outputBuilder.append(sched.getCourse()).append(", ").append(sched.getInstructor())
+						.append(", ").append(sched.getFromTime()).append(" -> ")
+						.append(sched.getToTime()).append(", ").append(sched.getDays()).append("\n");
+		}
+
+		else if (MainActivity.byInstructor || MainActivity.byInstructorNow) {
+			for (Schedule sched : schedule)
+				outputBuilder.append(sched.getRoom()).append(", ").append(sched.getCourse()).append(", ")
+						.append(", ").append(sched.getFromTime()).append(" -> ")
+						.append(sched.getToTime()).append(", ").append(sched.getDays()).append("\n");
+		}
+
+		else if (MainActivity.byCourse) {
+			for (Schedule sched : schedule)
+				outputBuilder.append(sched.getRoom()).append(", ").append(sched.getInstructor()).append(", ")
+						.append(", ").append(sched.getFromTime()).append(" -> ")
+						.append(sched.getToTime()).append(", ").append(sched.getDays()).append("\n");
+		}
 
 		return outputBuilder.toString();
 	}
