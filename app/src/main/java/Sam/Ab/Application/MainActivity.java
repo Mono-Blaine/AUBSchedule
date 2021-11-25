@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     public static boolean byThereLast = false;
     public static boolean byThereNow = false;
     public static boolean byInstructorNow = false;
+    public static boolean coursesLoaded = false;
     public static String semester = "Fall";
     public static ArrayList<Course> courses = new ArrayList<>();
     Spinner  spinnerSearch;
