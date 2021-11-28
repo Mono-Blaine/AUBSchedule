@@ -12,4 +12,4 @@ Features:
 
 _Written in_ Java 17.0.1
 
-![Layout when the user opens the application](https://drive.google.com/file/d/1npqzkjohZDYZxQ9l6PoSN-C6AfCFBiIN/view?usp=sharing)
+![Layout of the application upon opening](https://user-images.githubusercontent.com/82033977/143779066-d7c772f0-972d-4482-b7e2-01e414510e52.jpg)
