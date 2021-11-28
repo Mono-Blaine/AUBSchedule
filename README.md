@@ -12,4 +12,4 @@ Features:
 
 _Written in_ Java 17.0.1
 
-![Layout of the application upon opening](https://user-images.githubusercontent.com/82033977/143779066-d7c772f0-972d-4482-b7e2-01e414510e52.jpg)
+<img src="https://user-images.githubusercontent.com/16319829/81180309-2b51f000-8fee-11ea-8a78-ddfe8c3412a7.png" width=50% height=50%>
