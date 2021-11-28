@@ -12,4 +12,4 @@ Features:
 
 _Written in_ Java 17.0.1
 
-<img src="https://user-images.githubusercontent.com/82033977/143779066-d7c772f0-972d-4482-b7e2-01e414510e52.jpg" width=50% height=50%>
+<img src="https://user-images.githubusercontent.com/82033977/143779066-d7c772f0-972d-4482-b7e2-01e414510e52.jpg" width=30% height=30%>
