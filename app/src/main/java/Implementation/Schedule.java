@@ -8,6 +8,7 @@ public class Schedule {
 	private LocalTime to = LocalTime.of(0, 0);
 	private String instructor = "N/A";
 	private String course = "N/A";
+	private String subject = "N/A";
 	private boolean monday = false;
 	private boolean tuesday = false;
 	private boolean wednesday = false;
@@ -17,13 +18,14 @@ public class Schedule {
 	
 	public Schedule() {}
 
-	public Schedule(String room, LocalTime from, LocalTime to, String instructor, String course, boolean monday, boolean tuesday,
-			boolean wednesday, boolean thursday, boolean friday, boolean saturday) {
+	public Schedule(String room, LocalTime from, LocalTime to, String instructor, String course, String subject,
+			boolean monday, boolean tuesday, boolean wednesday, boolean thursday, boolean friday, boolean saturday) {
 		this.room = room;
 		this.from = from;
 		this.to = to;
 		this.instructor = instructor;
 		this.course= course;
+		this.subject = subject;
 		this.monday = monday;
 		this.tuesday = tuesday;
 		this.wednesday = wednesday;
@@ -51,6 +53,8 @@ public class Schedule {
 	public String getCourse() {
 		return course;
 	}
+
+	public String getSubject() { return subject; }
 
 	public boolean getMonday() {
 		return monday;

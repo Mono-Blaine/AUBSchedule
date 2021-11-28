@@ -30,9 +30,9 @@ public class Printer {
 
 		else if (MainActivity.byCourse) {
 			for (Schedule sched : schedule)
-				outputBuilder.append(sched.getRoom()).append(", ").append(sched.getInstructor()).append(", ")
-						.append(", ").append(sched.getFromTime()).append(" -> ")
-						.append(sched.getToTime()).append(", ").append(sched.getDays()).append("\n");
+				outputBuilder.append(sched.getRoom()).append(", ").append(sched.getSubject()).append(", ")
+						.append(sched.getInstructor()).append(", ").append(", ").append(sched.getFromTime())
+						.append(" -> ").append(sched.getToTime()).append(", ").append(sched.getDays()).append("\n");
 		}
 
 		return outputBuilder.toString();

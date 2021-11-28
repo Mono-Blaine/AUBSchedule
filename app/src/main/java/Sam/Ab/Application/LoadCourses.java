@@ -19,7 +19,7 @@ public class LoadCourses {
             Toast.makeText(context, MainActivity.courses.size() + " courses loaded", Toast.LENGTH_LONG).show();
             return;
         }
-        
+
         toDb = new CsvToDb(context);
 
         for (int i = 0; i < 26; i++) {

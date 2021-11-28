@@ -2,11 +2,9 @@ package Implementation;
 
 import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Locale;
 import java.util.stream.Collectors;
 
 public class CourSeera {
@@ -61,8 +59,8 @@ public class CourSeera {
 		
 		for (Course c : s)
 			result.add(new Schedule(c.getBldg() + " " + c.getRoom(), c.getBegin_time(), c.getEnd_time(), c.getFirstName() + " "
-					+c.getLastName(), c.getSubject() + " " + c.getCourse_num(), c.getMonday(), c.getTuesday(), c.getWednesday(),
-					c.getThursday(), c.getFriday(), c.getSaturday()));
+					+c.getLastName(), c.getSubject() + " " + c.getCourse_num(), c.getTitle(),
+					c.getMonday(), c.getTuesday(), c.getWednesday(), c.getThursday(), c.getFriday(), c.getSaturday()));
 		
 		// in case no schedule was added to the list in the part above, and empty schedule (N/A) is added
 		if (result.size() == 0)
@@ -89,8 +87,8 @@ public class CourSeera {
 		
 		for (Course c : s)
 			result.add(new Schedule(c.getBldg() + " " + c.getRoom(), c.getBegin_time(), c.getEnd_time(), c.getFirstName() + " "
-					+c.getLastName(), c.getSubject() + " " + c.getCourse_num(), c.getMonday(), c.getTuesday(), c.getWednesday(),
-					c.getThursday(), c.getFriday(), c.getSaturday()));
+					+c.getLastName(), c.getSubject() + " " + c.getCourse_num(), c.getTitle(),
+					c.getMonday(), c.getTuesday(), c.getWednesday(), c.getThursday(), c.getFriday(), c.getSaturday()));
 		
 		// in case no schedule was added to the list in the part above, and empty schedule (N/A) is added
 		if(result.size() == 0)
@@ -116,8 +114,8 @@ public class CourSeera {
 
 		for (Course c : s)
 			result.add(new Schedule(c.getBldg() + " " + c.getRoom(), c.getBegin_time(), c.getEnd_time(), c.getFirstName() + " "
-				+ c.getLastName(), c.getSubject() + " " + c.getCourse_num(), c.getMonday(), c.getTuesday(),
-				c.getWednesday(), c.getThursday(), c.getFriday(), c.getSaturday()));
+				+ c.getLastName(), c.getSubject() + " " + c.getCourse_num(), c.getTitle(),
+				c.getMonday(), c.getTuesday(), c.getWednesday(), c.getThursday(), c.getFriday(), c.getSaturday()));
 
 		// in case no schedule was added to the list in the part above, and empty schedule (N/A) is added
 		if (result.size() == 0)
@@ -156,7 +154,7 @@ public class CourSeera {
 
 		return new ArrayList<>(Collections.singletonList(new Schedule(closest.getBldg() + " " + closest.getRoom(),
 				closest.getBegin_time(), closest.getEnd_time(), closest.getFirstName() + " " +
-				closest.getLastName(), closest.getSubject() + " " + closest.getCourse_num(),
+				closest.getLastName(), closest.getSubject() + " " + closest.getCourse_num(), closest.getTitle(),
 				closest.getMonday(), closest.getTuesday(), closest.getWednesday(), closest.getThursday(),
 				closest.getFriday(), closest.getSaturday())));
 	}
@@ -181,7 +179,7 @@ public class CourSeera {
 
 		return new ArrayList<>(Collections.singletonList(new Schedule(s.get(0).getBldg() + " " + s.get(0).getRoom(),
 			s.get(0).getBegin_time(), s.get(0).getEnd_time(), s.get(0).getFirstName() + " " +
-			s.get(0).getLastName(), s.get(0).getSubject() + " " + s.get(0).getCourse_num(),
+			s.get(0).getLastName(), s.get(0).getSubject() + " " + s.get(0).getCourse_num(), s.get(0).getTitle(),
 			s.get(0).getMonday(), s.get(0).getTuesday(), s.get(0).getWednesday(), s.get(0).getThursday(),
 			s.get(0).getFriday(), s.get(0).getSaturday())));
 
@@ -206,7 +204,7 @@ public class CourSeera {
 
 		return new ArrayList<>(Collections.singletonList(new Schedule(s.get(0).getBldg() + " " + s.get(0).getRoom(),
 			s.get(0).getBegin_time(), s.get(0).getEnd_time(), s.get(0).getFirstName() + " " +
-			s.get(0).getLastName(), s.get(0).getSubject() + " " + s.get(0).getCourse_num(),
+			s.get(0).getLastName(), s.get(0).getSubject() + " " + s.get(0).getCourse_num(), s.get(0).getTitle(),
 			s.get(0).getMonday(), s.get(0).getTuesday(), s.get(0).getWednesday(), s.get(0).getThursday(),
 			s.get(0).getFriday(), s.get(0).getSaturday())));
 	}
