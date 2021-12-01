@@ -20,6 +20,7 @@ public class LoadCourses {
             return;
         }
 
+
         toDb = new CsvToDb(context);
 
         for (int i = 0; i < 26; i++) {
@@ -27,7 +28,8 @@ public class LoadCourses {
             toDb.csvToDb(MainActivity.courses, csvFile);
         }
 
-        MainActivity.coursesLoaded = true;
+        if (MainActivity.courses.size() > 0)
+            MainActivity.coursesLoaded = true;
 
         Toast.makeText(context, MainActivity.courses.size() + " courses loaded", Toast.LENGTH_LONG).show();
     }
