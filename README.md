@@ -10,6 +10,6 @@ Features:
 - Download files and create the course list separately
 - Choose which semester the user wants to search
 
-_Written in_ Java 17.0.1
+_Written in Java 17.0.1_
 
-![Layout of the application upon opening](https://user-images.githubusercontent.com/82033977/143779066-d7c772f0-972d-4482-b7e2-01e414510e52.jpg)
+<img src="https://user-images.githubusercontent.com/82033977/143779066-d7c772f0-972d-4482-b7e2-01e414510e52.jpg" width=30% height=30%>
