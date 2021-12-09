@@ -10,7 +10,7 @@ Features:
 - Download files and create the course list separately
 - Choose which semester the user wants to search
 
-APK file can be download [_here_](https://www.mediafire.com/file/knvcqjx3o1s2yxr/AUBSchedule_Installer.apk/file).
+APK can be download [_here_](https://www.mediafire.com/file/knvcqjx3o1s2yxr/AUBSchedule_Installer.apk/file).
 
 _Written in Java 17.0.1_
 
